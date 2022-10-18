@@ -21,7 +21,8 @@ Methods of solving from most to least number of queries to the train labels data
 
 2. Semi-supervised / pseudo-labelling - order images data by labels and query for example 500 labels for each class.
 Use supervised learning to train on these 1000*number of classes. Then classify the rest keeping the high confidence
-labels. Repeat the process until all are labeled and then test.(The method that I've used)
+labels. Repeat the process until all are labeled and then test. (The method that I've used)
+Nr of labels retrieved:~10400   Overall accuracy: 90.2%
 
 3. Use unsupervised learning to attribute the images to n clusters. Where n is the number of classes. Then cluster the
 test data, use the most prevailing label as the cluster label and then test against the test labels. Having the requirement of
